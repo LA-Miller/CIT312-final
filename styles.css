@@ -1,0 +1,291 @@
+body {
+  background: linear-gradient(180deg, #f4efe4 0%, #fbf9f4 100%);
+  color: var(--text-dark);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.skip-link {
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  top: -4rem;
+  z-index: 1000;
+  background: var(--purdue-black);
+  color: #fff;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.site-nav {
+  background: var(--purdue-black);
+}
+
+.nav-shell {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 4.5rem;
+  position: relative;
+}
+
+.site-brand {
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.site-brand:hover,
+.site-brand:focus {
+  color: #fff;
+}
+
+.nav-toggle {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.nav-toggle-label {
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.4rem 0;
+}
+
+.nav-toggle-label span {
+  background: #fff;
+  border-radius: 999px;
+  display: block;
+  height: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 1.9rem;
+}
+
+.nav-links-wrap {
+  display: none;
+  left: 0;
+  padding-bottom: 1rem;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.nav-links-list {
+  background: var(--nav-panel);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.nav-links-list a {
+  color: #fff;
+  display: block;
+  padding: 0.65rem 0.2rem;
+  text-decoration: none;
+}
+
+.nav-links-list a:hover,
+.nav-links-list a:focus {
+  color: var(--purdue-gold);
+}
+
+.nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-toggle:checked ~ .nav-links-wrap {
+  display: block;
+}
+
+.hero-section {
+  background: radial-gradient(circle at top right, rgba(207, 185, 145, 0.55), transparent 35%), linear-gradient(135deg, #f8f1e3 0%, #fdfcf8 100%);
+}
+
+.hero-panel,
+.info-tile,
+.major-card,
+.plan-card {
+  background: var(--panel-white);
+  border: 1px solid rgba(220, 207, 180, 0.8);
+  border-radius: 1rem;
+}
+
+.eyebrow {
+  color: var(--eyebrow-brown);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  max-width: 38rem;
+}
+
+.majors-section {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.course-plans-section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.55) 100%);
+}
+
+.quiz-section {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.major-visual {
+  overflow: hidden;
+  width: 100%;
+  height: 13rem;
+  border-radius: 0.9rem;
+  background: var(--major-frame);
+}
+
+.major-visual img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.major-badge {
+  background: var(--purdue-gold);
+  color: var(--purdue-black);
+}
+
+.major-card {
+  min-height: 100%;
+}
+
+.major-card .card-body {
+  height: 100%;
+}
+
+.major-card .card-title {
+  min-height: 3.5rem;
+}
+
+.major-card .card-text {
+  min-height: 7.5rem;
+}
+
+.major-card .btn:hover,
+.major-card .btn:focus {
+  background: #343434;
+}
+
+.plan-card:target {
+  border-color: var(--purdue-gold);
+  box-shadow: 0 0 0 4px var(--warm-shadow);
+}
+
+.quiz-card,
+.quiz-result {
+  background: var(--panel-white);
+  border: 1px solid rgba(220, 207, 180, 0.8);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.quiz-question {
+  border: 0;
+  padding: 0;
+}
+
+.quiz-question legend {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.quiz-question label {
+  background: var(--quiz-fill);
+  border-radius: 0.75rem;
+  display: block;
+  margin-bottom: 0.75rem;
+  padding: 0.85rem 1rem;
+}
+
+.quiz-question input {
+  margin-right: 0.65rem;
+}
+
+.course-toggle {
+  border-top: 1px solid var(--course-border);
+  padding-top: 1rem;
+}
+
+.course-toggle summary {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  list-style: none;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.course-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.course-toggle summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.course-toggle[open] summary::after {
+  content: "-";
+}
+
+.next-step-copy {
+  max-width: 48rem;
+}
+
+@media (min-width: 992px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  .nav-links-wrap {
+    display: block;
+    padding-bottom: 0;
+    position: static;
+    width: auto;
+  }
+  .nav-links-list {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  .nav-links-list a {
+    padding: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-panel {
+    margin-top: 0.5rem;
+  }
+}

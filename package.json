@@ -1,0 +1,11 @@
+{
+  "name": "cit312-final-project",
+  "private": true,
+  "scripts": {
+    "build-css": "sass styles.scss theme.css --no-source-map",
+    "watch-css": "sass --watch styles.scss:theme.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
+}

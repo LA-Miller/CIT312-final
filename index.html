@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACC Program Explorer</title>
+    <meta
+      name="description"
+      content="Explore Purdue Polytechnic's Applied and Creative Computing majors, example careers, and course-planning details."
+    >
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    >
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <header>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="container nav-shell">
+          <a class="site-brand fw-bold" href="#">ACC Program Explorer</a>
+          <input class="nav-toggle" type="checkbox" id="nav-toggle">
+          <!-- HAMBURGER MENU -->
+          <label class="nav-toggle-label" for="nav-toggle" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="nav-links-wrap">
+            <ul class="nav-links-list">
+              <li><a href="#majors">Majors</a></li>
+              <li><a href="#quiz">Quiz</a></li>
+              <li><a href="#course-plans">Course Plans</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Intro section -->
+      <section class="hero-section py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <p class="eyebrow mb-2">CIT 312 Final Project</p>
+              <h1 class="display-5 fw-bold">Course Visualization Tool</h1>
+              <p class="lead mt-3">
+                The School of Applied and Creative Computing includes 9 undergraduate programs,
+                each with an associated course load. Explore each major and jump to its course section below.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a class="btn btn-dark btn-lg" href="#majors">Browse majors</a>
+                <a class="btn btn-outline-dark btn-lg" href="#quiz">Take the quiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- List of majors in cards -->
+    <main id="main-content">
+      <section id="majors" class="py-5 majors-section">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+            <div class="section-heading mb-0">
+              <p class="eyebrow mb-2">Majors</p>
+              <h2>School of Applied and Creative Computing</h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/animation.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Animation and Visual Effects</h3>
+                  <p class="card-text flex-grow-1">Create visual stories with animation, compositing, effects, and digital production workflows.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#animation-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/information-technology.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Computer and Information Technology</h3>
+                  <p class="card-text flex-grow-1">Blend technical troubleshooting, systems thinking, and business-ready computing skills.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#cit-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/network-engineer.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Computing Infrastructure and Network Engineering Technology</h3>
+                  <p class="card-text flex-grow-1">Focus on networks, infrastructure, system administration, and secure computing environments.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#cnet-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/cybersecurity.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Cybersecurity</h3>
+                  <p class="card-text flex-grow-1">Study how to secure data, systems, and networks against modern digital threats.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#cyber-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/data-analytics.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Data Analytics, Technologies and Applications</h3>
+                  <p class="card-text flex-grow-1">Use data tools and analytic thinking to examine patterns and support better decisions.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#data-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/game-dev.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Game Development</h3>
+                  <p class="card-text flex-grow-1">Combine design, storytelling, interaction, and technical development for playable experiences.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#game-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/themed-entertainment.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Themed Entertainment Design</h3>
+                  <p class="card-text flex-grow-1">Design immersive attractions and spaces that connect physical, digital, and visual experiences.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#themed-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/ux-design.jpeg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">UX Design</h3>
+                  <p class="card-text flex-grow-1">Research user needs and shape products that are useful, usable, and engaging.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#ux-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card major-card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column">
+                  <div class="major-visual mb-3" aria-hidden="true"><img src="assets/web-programming.jpg" alt=""></div>
+                  <span class="badge rounded-pill major-badge align-self-start mb-3">ACC Major</span>
+                  <h3 class="card-title h4">Web Programming and Design</h3>
+                  <p class="card-text flex-grow-1">Build web experiences with front-end and back-end thinking, visual design, and structured content.</p>
+                  <a class="btn btn-dark mt-3 align-self-start" href="#web-plan">Explore this major</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quiz section with 10 questions-->
+      <section id="quiz" class="py-5 quiz-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow mb-2">Program Quiz</p>
+            <h2>Answer a few questions to see which ACC major fits best</h2>
+          </div>
+          <form id="major-quiz" class="quiz-card mt-4" aria-describedby="quiz-help">
+            <p id="quiz-help" class="mb-4">
+              Pick the answer that sounds most like you. This is a simple recommendation quiz,
+              meant to give a good-faith suggestion based on your interests.
+            </p>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>1. What kind of work sounds most exciting?</legend>
+              <label><input type="radio" name="q1" value="animation"> Creating visual effects, animation, or digital scenes</label>
+              <label><input type="radio" name="q1" value="web"> Building websites or interactive online experiences</label>
+              <label><input type="radio" name="q1" value="cyber"> Protecting systems, data, and networks</label>
+              <label><input type="radio" name="q1" value="data"> Working with data to find patterns and support decisions</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>2. Which class project would you choose first?</legend>
+              <label><input type="radio" name="q2" value="game"> Designing a playable game prototype</label>
+              <label><input type="radio" name="q2" value="ux"> Interviewing users and improving an app design</label>
+              <label><input type="radio" name="q2" value="cit"> Solving business technology problems for an organization</label>
+              <label><input type="radio" name="q2" value="cnet"> Planning and configuring a networked system</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>3. What environment sounds like the best fit?</legend>
+              <label><input type="radio" name="q3" value="themed"> Museums, attractions, and immersive experiences</label>
+              <label><input type="radio" name="q3" value="animation"> Creative studios and media production teams</label>
+              <label><input type="radio" name="q3" value="web"> Digital product teams building for the web</label>
+              <label><input type="radio" name="q3" value="data"> Analytics teams making sense of information</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>4. Which strength describes you best?</legend>
+              <label><input type="radio" name="q4" value="ux"> Understanding people and improving their experience</label>
+              <label><input type="radio" name="q4" value="cyber"> Spotting risks and thinking carefully about security</label>
+              <label><input type="radio" name="q4" value="game"> Mixing creativity with technical problem-solving</label>
+              <label><input type="radio" name="q4" value="cit"> Adapting technology to meet practical needs</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>5. Which toolset sounds most interesting?</legend>
+              <label><input type="radio" name="q5" value="themed"> Storyboards, layouts, and experience concepts</label>
+              <label><input type="radio" name="q5" value="cnet"> Servers, routers, and network services</label>
+              <label><input type="radio" name="q5" value="web"> Front-end and back-end web development tools</label>
+              <label><input type="radio" name="q5" value="data"> Databases, dashboards, and machine learning tools</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>6. What kind of result would make you most proud?</legend>
+              <label><input type="radio" name="q6" value="animation"> A polished visual piece that tells a story</label>
+              <label><input type="radio" name="q6" value="ux"> A product that feels easy and enjoyable to use</label>
+              <label><input type="radio" name="q6" value="cyber"> A system that stays safe and dependable</label>
+              <label><input type="radio" name="q6" value="cit"> A technology solution that helps people work better</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>7. Which kind of challenge sounds most interesting?</legend>
+              <label><input type="radio" name="q7" value="cnet"> Keeping systems connected and running smoothly</label>
+              <label><input type="radio" name="q7" value="data"> Turning lots of information into useful insight</label>
+              <label><input type="radio" name="q7" value="game"> Balancing fun, interaction, and technical design</label>
+              <label><input type="radio" name="q7" value="themed"> Building an experience that feels immersive and memorable</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>8. Which description sounds most like your style?</legend>
+              <label><input type="radio" name="q8" value="animation"> Visual, creative, and media-focused</label>
+              <label><input type="radio" name="q8" value="cit"> Flexible, practical, and technology-focused</label>
+              <label><input type="radio" name="q8" value="ux"> Curious about people and how they use products</label>
+              <label><input type="radio" name="q8" value="cyber"> Careful, methodical, and security-minded</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>9. What would you rather spend time improving?</legend>
+              <label><input type="radio" name="q9" value="web"> A website or web app</label>
+              <label><input type="radio" name="q9" value="cnet"> A network or server environment</label>
+              <label><input type="radio" name="q9" value="data"> A dashboard, model, or dataset</label>
+              <label><input type="radio" name="q9" value="ux"> A user flow or interface</label>
+            </fieldset>
+
+            <fieldset class="quiz-question mb-4">
+              <legend>10. Which future workplace sounds best to you?</legend>
+              <label><input type="radio" name="q10" value="game"> A game studio or interactive media team</label>
+              <label><input type="radio" name="q10" value="animation"> A digital art, animation, or effects team</label>
+              <label><input type="radio" name="q10" value="themed"> An attractions, museum, or themed design team</label>
+              <label><input type="radio" name="q10" value="cit"> An IT department helping an organization work better</label>
+            </fieldset>
+
+            <div class="d-flex flex-wrap gap-3">
+              <button class="btn btn-dark" type="submit">See my recommendation</button>
+              <button class="btn btn-outline-dark" type="reset">Reset quiz</button>
+            </div>
+          </form>
+
+          <section id="quiz-result" class="quiz-result mt-4" aria-live="polite">
+            <h3 class="h4">Recommendation</h3>
+            <p class="mb-0">Complete the quiz to see which major may be the best fit for you.</p>
+          </section>
+        </div>
+      </section>
+
+      <!-- List of classes and examples of careers -->
+      <section id="course-plans" class="py-5 course-plans-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow mb-2">Courses In Program</p>
+            <h2>Major course sections</h2>
+          </div>
+          <div class="row g-4 mt-2">
+            <div class="col-lg-6">
+              <article id="animation-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Animation and Visual Effects</h3>
+                <p>Example careers: 3D artist, motion graphics designer, visual effects assistant.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CGT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CGT 11200 - Sketching For Visualization And Communication</li>
+                    <li>CGT 11600 - Geometric Modeling For Visualization And Communication</li>
+                    <li>CGT 11800 - Fundamentals Of Imaging Technology</li>
+                    <li>CGT 12300 - Animation Foundations</li>
+                    <li>CGT 14100 - Internet Foundations, Development And Technologies</li>
+                    <li>CGT 14700 - Visual Effects Introduction</li>
+                    <li>CGT 17208 - User Experience Design Studio I: Fundamentals</li>
+                    <li>CGT 20500 - Portfolio Review</li>
+                    <li>CGT 24100 - Introduction To Computer Animation</li>
+                    <li>CGT 25001 - Computer Graphics Professional Practices I</li>
+                    <li>CGT 27000 - Introduction To Data Visualization</li>
+                    <li>CGT 30505 - Portfolio II</li>
+                    <li>CGT 40500 - Senior Portfolio Review</li>
+                    <li>CGT 41101 - Contemporary Problems In Applied Computer Graphics I</li>
+                    <li>CGT 41201 - Contemporary Problems In Applied Computer Graphics II</li>
+                    <li>CGT 44200 - Production For Computer Animation</li>
+                    <li>CGT 45001 - Computer Graphics Professional Practices II</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="cit-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Computer and Information Technology</h3>
+                <p>Example careers: systems analyst, support specialist, IT project technician.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CNIT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CNIT 15501 - Introduction To Software Development Concepts</li>
+                    <li>CNIT 17600 - Information Technology Architectures</li>
+                    <li>CNIT 18000 - Introduction To Systems Development</li>
+                    <li>CNIT 24200 - System Administration</li>
+                    <li>CNIT 25501 - Object-Oriented Programming Introduction</li>
+                    <li>CNIT 27000 - Cybersecurity Fundamentals I</li>
+                    <li>CNIT 27200 - Database Fundamentals</li>
+                    <li>CNIT 28000 - Systems Analysis And Design Methods</li>
+                    <li>CNIT 32000 - Policy, Regulation, And Globalization In Information Technology</li>
+                    <li>CNIT 48000 - Managing Information Technology Projects</li>
+                    <li>Choose one: CNIT 31500 - Systems Programming or CNIT 32500 - Object-Oriented Application Development</li>
+                    <li>Choose one: CNIT 37200 - Database Programming or CNIT 39200 - Enterprise Data Management</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="cnet-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Computing Infrastructure and Network Engineering Technology</h3>
+                <p>Example careers: network technician, systems administrator, infrastructure analyst.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CNIT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CNIT 15501 - Introduction To Software Development Concepts</li>
+                    <li>CNIT 17600 - Information Technology Architectures</li>
+                    <li>Choose one: CNIT 18000 - Introduction To Systems Development or CNIT 18200 - System And Organizational Security</li>
+                    <li>CNIT 24200 - System Administration</li>
+                    <li>CNIT 25501 - Object-Oriented Programming Introduction</li>
+                    <li>CNIT 27000 - Cybersecurity Fundamentals I</li>
+                    <li>CNIT 27200 - Database Fundamentals</li>
+                    <li>CNIT 31500 - Systems Programming</li>
+                    <li>CNIT 34000 - UNIX Administration</li>
+                    <li>CNIT 34220 - Advanced System And Network Administration</li>
+                    <li>Choose one: CNIT 24000 - Data Communications And Networking or CNIT 34400 - Network Engineering Fundamentals</li>
+                    <li>CNIT 34500 - Internetwork Design And Implementation</li>
+                    <li>CNIT 34600 - Wireless Local Area Networks</li>
+                    <li>Choose one: CNIT 32000 - Policy, Regulation, And Globalization In Information Technology or CNIT 37100 - Cyberlaw And Ethics</li>
+                    <li>CNIT 45500 - Network Security</li>
+                    <li>CNIT 48000 - Managing Information Technology Projects</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="cyber-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Cybersecurity</h3>
+                <p>Example careers: security analyst, SOC technician, risk assessment assistant.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CNIT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CNIT 15501 - Introduction To Software Development Concepts</li>
+                    <li>CNIT 17600 - Information Technology Architectures</li>
+                    <li>CNIT 18200 - System And Organizational Security</li>
+                    <li>CNIT 24200 - System Administration</li>
+                    <li>CNIT 25501 - Object-Oriented Programming Introduction</li>
+                    <li>CNIT 27000 - Cybersecurity Fundamentals I</li>
+                    <li>CNIT 27100 - Cybersecurity Fundamentals II</li>
+                    <li>CNIT 27200 - Database Fundamentals</li>
+                    <li>CNIT 32300 - Basic Cyberforensics</li>
+                    <li>CNIT 34000 - UNIX Administration</li>
+                    <li>CNIT 34220 - Network Administration</li>
+                    <li>CNIT 34400 - Network Engineering Fundamentals</li>
+                    <li>CNIT 37000 - Introduction To Cryptography</li>
+                    <li>CNIT 37100 - Cyberlaw And Ethics</li>
+                    <li>CNIT 42200 - Cyber Criminology</li>
+                    <li>CNIT 45500 - Network Security</li>
+                    <li>CNIT 47000 - Incident Response Management</li>
+                    <li>CNIT 47100 - Vulnerability Analysis And Testing</li>
+                    <li>CNIT 48000 - Managing Information Technology Projects</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="data-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Data Analytics, Technologies and Applications</h3>
+                <p>Example careers: data analyst, business intelligence assistant, reporting specialist.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CNIT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CNIT 15501 - Introduction To Software Development Concepts</li>
+                    <li>CNIT 17600 - Information Technology Architectures</li>
+                    <li>CNIT 18000 - Introduction To Systems Development</li>
+                    <li>CNIT 24200 - System Administration</li>
+                    <li>CNIT 25501 - Object-Oriented Programming Introduction</li>
+                    <li>CNIT 27000 - Cybersecurity Fundamentals I</li>
+                    <li>CNIT 27200 - Database Fundamentals</li>
+                    <li>CNIT 28000 - Systems Analysis And Design Methods</li>
+                    <li>CNIT 32000 - Policy, Regulation, And Globalization In Information Technology</li>
+                    <li>CNIT 32200 - Research Methodology And Design</li>
+                    <li>CNIT 37200 - Database Programming</li>
+                    <li>CNIT 39200 - Enterprise Data Management</li>
+                    <li>CNIT 48000 - Managing Information Technology Projects</li>
+                    <li>CNIT 48200 - Six Sigma Data Quality For Continuous Improvement</li>
+                    <li>CNIT 48300 - Applied Machine Learning</li>
+                    <li>CNIT 48400 - Applications In Data Science</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="game-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Game Development</h3>
+                <p>Example careers: gameplay tester, level designer, game tools assistant.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CGT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CGT 10501 - Introduction To Games</li>
+                    <li>CGT 11600 - Geometric Modeling For Visualization And Communication</li>
+                    <li>CGT 11800 - Fundamentals Of Imaging Technology</li>
+                    <li>CGT 14100 - Internet Foundations, Development And Technologies</li>
+                    <li>CGT 17208 - User Experience Design Studio I: Fundamentals</li>
+                    <li>CGT 20500 - Portfolio Review</li>
+                    <li>CGT 21500 - Computer Graphics Programming I</li>
+                    <li>CGT 24500 - Game Development I: Core Skills And Technologies</li>
+                    <li>CGT 25001 - Computer Graphics Professional Practices I</li>
+                    <li>CGT 25500 - Game Development II: Design And Psychology</li>
+                    <li>CGT 27000 - Introduction To Data Visualization</li>
+                    <li>CGT 30505 - Portfolio Review</li>
+                    <li>CGT 36500 - Game Development Practicum</li>
+                    <li>CGT 40500 - Senior Portfolio Review</li>
+                    <li>CGT 41101 - Contemporary Problems In Applied Computer Graphics I</li>
+                    <li>CGT 41201 - Contemporary Problems In Applied Computer Graphics II</li>
+                    <li>CGT 45001 - Computer Graphics Professional Practices II</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="themed-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Themed Entertainment Design</h3>
+                <p>Example careers: experience designer, exhibit design assistant, creative production coordinator.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CGT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CGT 11200 - Sketching For Visualization And Communication</li>
+                    <li>CGT 11700 - Illustrating For Visualization And Communication</li>
+                    <li>CGT 11800 - Fundamentals Of Imaging Technology</li>
+                    <li>CGT 12300 - Animation Foundations</li>
+                    <li>CGT 11600 - Geometric Modeling For Visualization And Communication</li>
+                    <li>CGT 14700 - Visual Effects Introduction</li>
+                    <li>CGT 20400 - Introduction To Themed Attraction Design</li>
+                    <li>CGT 20500 - Portfolio Review</li>
+                    <li>CGT 25001 - Computer Graphics Professional Practices I</li>
+                    <li>CGT 25100 - Principles Of Creative Design</li>
+                    <li>CGT 31300 - Digital Painting I For Computer Graphics</li>
+                    <li>CGT 31700 - Planning And Communicating Themed Attraction Design</li>
+                    <li>CGT 32800 - Business Of Themed Entertainment</li>
+                    <li>CGT 36700 - Previsualization In Themed Entertainment</li>
+                    <li>CGT 30505 - Portfolio II</li>
+                    <li>CGT 40500 - Senior Portfolio Review</li>
+                    <li>CGT 40700 - Current And Future Trends In Themed Attraction Design</li>
+                    <li>CGT 41101 - Contemporary Problems In Applied Computer Graphics I</li>
+                    <li>CGT 44200 - Production For Computer Animation</li>
+                    <li>CGT 45001 - Computer Graphics Professional Practices II</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="ux-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">UX Design</h3>
+                <p>Example careers: UX researcher, interface designer, usability tester.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CGT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CGT 11800 - Fundamentals Of Imaging Technology</li>
+                    <li>CGT 14100 - Internet Foundations Development And Technology</li>
+                    <li>CGT 17208 - User Experience Design Studio I: Fundamentals</li>
+                    <li>CGT 25001 - Professional Practices I</li>
+                    <li>CGT 27000 - Introduction To Data Visualization</li>
+                    <li>CGT 27108 - User Experience Design Studio II: Screen</li>
+                    <li>CGT 27207 - User Experience Design Experience Studio II</li>
+                    <li>CGT 27208 - User Experience Design Studio III: Cross-Channel</li>
+                    <li>CGT 37108 - User Experience Design Studio IV: Strategy</li>
+                    <li>CGT 37207 - User Experience Design Experience Studio III</li>
+                    <li>CGT 37208 - User Experience Design Studio V: Specialization</li>
+                    <li>CGT 41101 - Contemporary Problems In Applied CGT I</li>
+                    <li>CGT 41201 - Contemporary Problems In Applied CGT II</li>
+                    <li>CGT 45001 - Professional Practices II</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article id="web-plan" class="plan-card p-4 h-100">
+                <h3 class="h4">Web Programming and Design</h3>
+                <p>Example careers: front-end developer, web content specialist, junior web designer.</p>
+                <details class="course-toggle mt-4">
+                  <summary>Required CGT courses</summary>
+                  <ul class="mb-0 mt-3">
+                    <li>CGT 11600 - Geometric Modeling For Visualization And Communication</li>
+                    <li>CGT 11800 - Fundamentals Of Imaging Technology</li>
+                    <li>CGT 14100 - Internet Foundations, Development And Technologies</li>
+                    <li>CGT 17208 - User Experience Design Studio I: Fundamentals</li>
+                    <li>CGT 21500 - Computer Graphics Programming I</li>
+                    <li>CGT 25001 - Professional Practices I</li>
+                    <li>CGT 27000 - Introduction To Data Visualization</li>
+                    <li>CGT 35300 - Principles Of Interactive And Dynamic Media</li>
+                    <li>CGT 35600 - Web Programming, Development And Data Integration</li>
+                    <li>CGT 41101 - Contemporary Problems In Applied CGT I</li>
+                    <li>CGT 41201 - Contemporary Problems In Applied CGT II</li>
+                    <li>CGT 45001 - Professional Practices II</li>
+                    <li>CGT 45600 - Advanced Web Programming, Development And Data Integration</li>
+                  </ul>
+                </details>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const quizForm = document.getElementById("major-quiz");
+      const quizResult = document.getElementById("quiz-result");
+      const majorInfo = {
+        animation: "Animation and Visual Effects: a strong fit for students who enjoy visual storytelling, effects, and digital media production.",
+        cit: "Computer and Information Technology: a strong fit for students who want broad technology problem-solving skills for organizations.",
+        cnet: "Computing Infrastructure and Network Engineering Technology: a strong fit for students interested in networks, systems, and infrastructure.",
+        cyber: "Cybersecurity: a strong fit for students who want to protect systems, data, and digital environments.",
+        data: "Data Analytics, Technologies and Applications: a strong fit for students who enjoy working with information, patterns, and data-driven decisions.",
+        game: "Game Development: a strong fit for students who like interactive experiences, creative design, and technical development.",
+        themed: "Themed Entertainment Design: a strong fit for students who want to design immersive attractions and story-driven experiences.",
+        ux: "UX Design: a strong fit for students who care about research, usability, and designing around people’s needs.",
+        web: "Web Programming and Design: a strong fit for students who want to build websites and digital experiences."
+      };
+
+      // Each answer adds one point to its matching major, and the major with the highest total becomes the recommendation.
+      quizForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const answers = new FormData(quizForm);
+        const scores = {};
+        let totalAnswers = 0;
+
+        answers.forEach(function (value) {
+          totalAnswers += 1;
+          scores[value] = (scores[value] || 0) + 1;
+        });
+
+        if (totalAnswers < 10) {
+          quizResult.innerHTML = "<h3 class=\"h4\">Recommendation</h3><p class=\"mb-0\">Please answer all 10 questions before viewing your result.</p>";
+          return;
+        }
+
+        let bestMajor = "";
+        let bestScore = -1;
+
+        for (const major in scores) {
+          if (scores[major] > bestScore) {
+            bestMajor = major;
+            bestScore = scores[major];
+          }
+        }
+
+        quizResult.innerHTML = "<h3 class=\"h4\">Recommendation</h3><p class=\"mb-2\"><strong>" + majorInfo[bestMajor].split(":")[0] + "</strong></p><p class=\"mb-0\">" + majorInfo[bestMajor] + "</p>";
+      });
+
+      quizForm.addEventListener("reset", function () {
+        quizResult.innerHTML = "<h3 class=\"h4\">Recommendation</h3><p class=\"mb-0\">Complete the quiz to see which major may be the best fit for you.</p>";
+      });
+    </script>
+  </body>
+</html>

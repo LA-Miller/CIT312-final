@@ -1,0 +1,26 @@
+
+$purdue-gold: #cfb991;
+$purdue-black: #1f1f1f;
+$panel-white: #fffdfa;
+$soft-border: #dccfb4;
+$text-dark: #2a2a2a;
+$eyebrow-brown: #6c5840;
+$warm-shadow: rgba(207, 185, 145, 0.2);
+$nav-panel: rgba(31, 31, 31, 0.97);
+$quiz-fill: rgba(207, 185, 145, 0.12);
+$course-border: rgba(207, 185, 145, 0.8);
+$major-frame: #d9d0bd;
+
+:root {
+  --purdue-gold: #{$purdue-gold};
+  --purdue-black: #{$purdue-black};
+  --panel-white: #{$panel-white};
+  --soft-border: #{$soft-border};
+  --text-dark: #{$text-dark};
+  --eyebrow-brown: #{$eyebrow-brown};
+  --warm-shadow: #{$warm-shadow};
+  --nav-panel: #{$nav-panel};
+  --quiz-fill: #{$quiz-fill};
+  --course-border: #{$course-border};
+  --major-frame: #{$major-frame};
+}
